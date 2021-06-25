@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FleetingoldGrpcService", "FleetingoldGrpcService.csproj", "{48C0A628-2D1B-48B1-930F-BF390DE51977}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FleetingoldGrpcService.Shared", "FleetingoldGrpcService.Shared\FleetingoldGrpcService.Shared.csproj", "{45E3DC05-A8C1-41A4-8962-A510D42F0CCD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FleetingoldGrpcService", "FleetingoldGrpcService\FleetingoldGrpcService.csproj", "{57D632F1-EAEF-4B5E-A684-164614F6D450}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{48C0A628-2D1B-48B1-930F-BF390DE51977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{48C0A628-2D1B-48B1-930F-BF390DE51977}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{48C0A628-2D1B-48B1-930F-BF390DE51977}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{48C0A628-2D1B-48B1-930F-BF390DE51977}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45E3DC05-A8C1-41A4-8962-A510D42F0CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45E3DC05-A8C1-41A4-8962-A510D42F0CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45E3DC05-A8C1-41A4-8962-A510D42F0CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45E3DC05-A8C1-41A4-8962-A510D42F0CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57D632F1-EAEF-4B5E-A684-164614F6D450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57D632F1-EAEF-4B5E-A684-164614F6D450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57D632F1-EAEF-4B5E-A684-164614F6D450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57D632F1-EAEF-4B5E-A684-164614F6D450}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
