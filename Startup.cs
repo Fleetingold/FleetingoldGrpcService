@@ -17,6 +17,7 @@ namespace FleetingoldGrpcService
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddGrpc();
+            services.AddMagicOnion(); // Add this line
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -28,10 +29,10 @@ namespace FleetingoldGrpcService
             }
 
             app.UseRouting();
-
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGrpcService<GreeterService>();
+                // Replace to this line instead of MapGrpcService<GreeterService>()
+                endpoints.MapMagicOnionService();
 
                 endpoints.MapGet("/", async context =>
                 {
