@@ -1,5 +1,4 @@
 ﻿using MagicOnion;
-using System;
 
 namespace FleetingoldGrpcService.Shared
 {
