@@ -1,4 +1,5 @@
 ﻿using MagicOnion;
+using System.Threading.Tasks;
 
 namespace FleetingoldGrpcService.Shared
 {
@@ -8,5 +9,11 @@ namespace FleetingoldGrpcService.Shared
     {
         // The return type must be `UnaryResult<T>`.
         UnaryResult<int> SumAsync(int x, int y);
+
+        //MagicOnion can define and use primitive gRPC APIs(ClientStreaming, ServerStreaming, DuplexStreaming). 
+        Task<UnaryResult<string>> SumLegacyTaskAsync(int x, int y);
+        Task<ClientStreamingResult<int, string>> ClientStreamingSampleAsync();
+        Task<ServerStreamingResult<string>> ServertSreamingSampleAsync(int x, int y, int z);
+        Task<DuplexStreamingResult<int, string>> DuplexStreamingSampleAync();
     }
 }
